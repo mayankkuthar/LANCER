@@ -947,6 +947,10 @@ section {
   border-radius: 10px;
 }
 
+.services .service-item:hover {
+  background: #ffe976 !important;
+}
+
 .services .service-item .icon {
   width: 48px;
   height: 48px;
