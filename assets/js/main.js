@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('contextmenu', function(event) {
     event.preventDefault(); // Prevent the default right-click behavior
-    alert('Right Click is not allowed!'); // Show the alert with the message
+    alert('Right Click or Text selection is not allowed!'); // Show the alert with the message
 })
 
 // Prevent text selection
 document.addEventListener('selectstart', function(event) {
   event.preventDefault(); // Prevent text selection
-  alert('Text selection is not allowed!'); // Show the alert with the message
+  alert('Text selection or Right Click is not allowed!'); // Show the alert with the message
 });
 
 // Prevent copy shortcut (Ctrl+C / Cmd+C)
