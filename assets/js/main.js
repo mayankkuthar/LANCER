@@ -8,6 +8,25 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Prevent the default right-click behavior
+    alert('Right Click is not allowed!'); // Show the alert with the message
+})
+
+// Prevent text selection
+document.addEventListener('selectstart', function(event) {
+  event.preventDefault(); // Prevent text selection
+  alert('Text selection is not allowed!'); // Show the alert with the message
+});
+
+// Prevent copy shortcut (Ctrl+C / Cmd+C)
+document.addEventListener('keydown', function(event) {
+  if ((event.ctrlKey || event.metaKey) && event.key === 'c') {
+      event.preventDefault(); // Prevent copy shortcut
+      alert('Copying content is not allowed!'); // Show the alert with the message
+  }
+});
+
   /**
    * Preloader
    */
