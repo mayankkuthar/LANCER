@@ -29,8 +29,8 @@
   scroll-behavior: smooth;
 }
 
-.meninblue{
-  font-family: "MeninBlue", "Montserrat" !important ;
+.meninblue {
+  font-family: "MeninBlue", "Montserrat" !important;
   font-size: 60px !important;
   font-weight: 400 !important;
 }
@@ -2678,92 +2678,199 @@ section {
 
 .adminActions {
   position: fixed;
-  bottom: 35px; right: 35px;
+  bottom: 35px;
+  right: 35px;
 }
 
-  .adminButton {
-    height: 60px;
-    width: 60px;
-    background-color: rgba(0, 59, 52, 0.8);
-    border-radius: 50%;
-    display: block;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
+.adminButton {
+  height: 60px;
+  width: 60px;
+  background-color: rgba(0, 59, 52, 0.8);
+  border-radius: 50%;
+  display: block;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
 
-    .adminButton i {
-      font-size: 22px;
-    }
+.adminButton i {
+  font-size: 22px;
+}
 
-  .adminButtons {
-    position: absolute;
-    width: 100%;
-    bottom: 120%;
-    text-align: center;
-  }
+.adminButtons {
+  position: absolute;
+  width: 100%;
+  bottom: 120%;
+  text-align: center;
+}
 
-    .adminButtons a {
-      display: block;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      text-decoration: none;
-      margin: 10px auto 0;
-      line-height: 1.15;
-      color: #fff;
-      opacity: 0;
-      visibility: hidden;
-      position: relative;
-      box-shadow: 0 0 5px 1px rgba(51, 51, 51, .3);
-    }
+.adminButtons a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin: 10px auto 0;
+  line-height: 1.15;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  box-shadow: 0 0 5px 1px rgba(51, 51, 51, .3);
+}
 
-      .adminButtons a:hover {
-        transform: scale(1.05);
-      }
+.adminButtons a:hover {
+  transform: scale(1.05);
+}
 
-      .adminButtons a:nth-child(1) {background-color: #ff5722; transition: opacity .2s ease-in-out .3s, transform .15s ease-in-out;}
-      .adminButtons a:nth-child(2) {background-color: #03a9f4; transition: opacity .2s ease-in-out .25s, transform .15s ease-in-out;}
-      .adminButtons a:nth-child(3) {background-color: #f44336; transition: opacity .2s ease-in-out .2s, transform .15s ease-in-out;}
-      .adminButtons a:nth-child(4) {background-color: #4CAF50; transition: opacity .2s ease-in-out .15s, transform .15s ease-in-out;}
+.adminButtons a:nth-child(1) {
+  background-color: #ff5722;
+  transition: opacity .2s ease-in-out .3s, transform .15s ease-in-out;
+}
 
-      .adminActions a i {
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-      }
+.adminButtons a:nth-child(2) {
+  background-color: #03a9f4;
+  transition: opacity .2s ease-in-out .25s, transform .15s ease-in-out;
+}
 
-  .adminToggle {
-    -webkit-appearance: none;
-    position: absolute;
-    border-radius: 50%;
-    top: 0; left: 0;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    z-index: 2;
-    transition: box-shadow .2s ease-in-out;
-    box-shadow: 0 3px 5px 1px rgba(51, 51, 51, .3);
-  }
+.adminButtons a:nth-child(3) {
+  background-color: #f44336;
+  transition: opacity .2s ease-in-out .2s, transform .15s ease-in-out;
+}
 
-    .adminToggle:hover {
-      box-shadow: 0 3px 6px 2px rgba(51, 51, 51, .3);
-    }
+.adminButtons a:nth-child(4) {
+  background-color: #4CAF50;
+  transition: opacity .2s ease-in-out .15s, transform .15s ease-in-out;
+}
 
-    .adminToggle:checked ~ .adminButtons a {
-      opacity: 1;
-      visibility: visible;
-    }
+.adminActions a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-.text{
+.adminToggle {
+  -webkit-appearance: none;
+  position: absolute;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  z-index: 2;
+  transition: box-shadow .2s ease-in-out;
+  box-shadow: 0 3px 5px 1px rgba(51, 51, 51, .3);
+}
+
+.adminToggle:hover {
+  box-shadow: 0 3px 6px 2px rgba(51, 51, 51, .3);
+}
+
+.adminToggle:checked~.adminButtons a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.text {
   padding-top: 15px;
 }
 
-.text-m{
+.text-m {
   padding-top: 8px;
+}
+
+.pd_top6 {
+  padding-bottom: 6rem;
+}
+
+.left_screen {
+  background-color: #FFFFFF;
+  height: 28rem;
+}
+
+.right_screen {
+  padding: 0%;
+  background-color: rgba(0, 131, 116, 0.8);
+  height: 28rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Left Split Screen's Content*/
+.left_content {
+  padding: 2.5rem;
+}
+
+.logo_text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding-bottom: 2.5rem;
+}
+
+.description,
+.year {
+  color: #000;
+  font-weight: 500;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
+.theme_color {
+  color: rgba(0, 131, 116, 0.8);
+}
+
+
+/*Right Split Screen's Content*/
+.fashion_model {
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.menu_icon {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+}
+
+.arrows {
+  position: absolute;
+  background-color: #fff;
+  bottom: 0%;
+  left: 0%;
+  width: 80px;
+}
+
+.player {
+  position: absolute;
+  right: 5%;
+  bottom: 0%;
+}
+
+.number {
+  color: #fff;
+  font-weight: 500;
+}
+
+.line {
+  width: 80px;
+  height: 3px;
+  height: 5px;
+  background: #fff;
+  display: inline-block;
+  vertical-align: middle;
 }
