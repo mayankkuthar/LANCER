@@ -2829,6 +2829,14 @@ section {
   margin-bottom: 3rem;
 }
 
+.title-2 {
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #000000;
+  margin-bottom: 3rem;
+}
+
 .theme_color {
   color: rgba(0, 131, 116, 0.8);
 }
